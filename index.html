@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - PATKOL</title>
+    <title>Privacy Policy - PAE by PATKOL</title>
     <style>
         * {
             margin: 0;
@@ -138,6 +138,19 @@
             content: "📞 ";
         }
 
+        .highlight-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .highlight-box h4 {
+            margin-top: 0;
+            color: #856404;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .container {
@@ -178,11 +191,11 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: February 03, 2026</p>
+        <p class="last-updated">Effective Date: February 03, 2026</p>
         
         <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
         
-        <p>We use Your Personal Data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.termsfeed.com/privacy-policy-generator/" target="_blank">Privacy Policy Generator</a>.</p>
+        <p>We use Your Personal Data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
         
         <h2>Interpretation and Definitions</h2>
         
@@ -194,7 +207,7 @@
         <ul>
             <li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
             <li><strong>Affiliate</strong> means an entity that controls, is controlled by, or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</li>
-            <li><strong>Application</strong> refers to PAE, the software program provided by the Company.</li>
+            <li><strong>Application</strong> refers to PAE, the mobile application provided by the Company for monitoring industrial machinery, ice makers, and receiving notifications about sensor status and operational data.</li>
             <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Privacy Policy) refers to PATKOL Public Company Limited, 348 Chaloem Phrakiat Ratchakan Thi 9 Road, Nong Bon, Prawet, Bangkok, Thailand 10250.</li>
             <li><strong>Country</strong> refers to: Thailand</li>
             <li><strong>Device</strong> means any device that can access the Service such as a computer, a cell phone or a digital tablet.</li>
@@ -215,6 +228,7 @@
             <li>Email address</li>
             <li>First name and last name</li>
             <li>Phone number</li>
+            <li>Device Token (for push notifications via Firebase Cloud Messaging)</li>
         </ul>
         
         <h4>Usage Data</h4>
@@ -223,13 +237,41 @@
         <p>When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device's unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
         <p>We may also collect information that Your browser sends whenever You visit Our Service or when You access the Service by or through a mobile device.</p>
         
+        <h4>Information Collected through the Application</h4>
+        <p>When using Our Application, We may collect, with Your prior permission:</p>
+        <ul>
+            <li><strong>Device Tokens:</strong> We collect device tokens through Firebase Cloud Messaging (FCM) to send you push notifications regarding machinery status, sensor alerts, and operational updates.</li>
+            <li><strong>Machinery Data:</strong> Information related to your industrial equipment, ice makers, sensor readings, operational status, and performance metrics that you monitor through the Application.</li>
+        </ul>
+        <p>We use this information to provide features of Our Service, to improve and customize Our Service. The information may be uploaded to the Company's servers and/or a Service Provider's server or it may be simply stored on Your device.</p>
+        <p>You can enable or disable access to this information at any time through Your device settings.</p>
+        
+        <h2>Third-Party Services</h2>
+        <p>Our Service uses third-party services that may collect information used to identify You. These third-party service providers have their own privacy policies addressing how they use such information.</p>
+        
+        <h3>Firebase Services (Google LLC)</h3>
+        <p>We use Firebase services provided by Google LLC for the following purposes:</p>
+        <ul>
+            <li><strong>Firebase Authentication:</strong> To manage user accounts and authentication securely.</li>
+            <li><strong>Cloud Firestore:</strong> To store and sync user data, machinery information, sensor data, and application settings in real-time.</li>
+            <li><strong>Firebase Cloud Messaging (FCM):</strong> To send push notifications to your device regarding machinery status updates, sensor alerts, and important operational information. FCM collects and processes device tokens to deliver notifications.</li>
+        </ul>
+        <p>Data processed by Firebase is subject to Google's privacy policy. For more information, please visit: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+        
+        <h3>Data Shared with Third Parties</h3>
+        <p>The following information may be shared with third-party service providers:</p>
+        <ul>
+            <li><strong>Google/Firebase:</strong> Email address, name, user ID, device tokens, and machinery data for authentication, data storage, and push notification delivery.</li>
+        </ul>
+        <p>We do not share your personal data with third parties for marketing purposes.</p>
+        
         <h3>Use of Your Personal Data</h3>
         <p>The Company may use Personal Data for the following purposes:</p>
         <ul>
-            <li><strong>To provide and maintain our Service</strong>, including to monitor the usage of our Service.</li>
+            <li><strong>To provide and maintain our Service</strong>, including to monitor the usage of our Service and machinery status.</li>
             <li><strong>To manage Your Account:</strong> to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</li>
             <li><strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.</li>
-            <li><strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</li>
+            <li><strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as push notifications via Firebase Cloud Messaging regarding updates, machinery alerts, sensor status changes, or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</li>
             <li><strong>To provide You</strong> with news, special offers, and general information about other goods, services and events which We offer that are similar to those that you have already purchased or inquired about unless You have opted not to receive such information.</li>
             <li><strong>To manage Your requests:</strong> To attend and manage Your requests to Us.</li>
             <li><strong>For business transfers:</strong> We may use Your Personal Data to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.</li>
@@ -238,11 +280,10 @@
         
         <p>We may share Your Personal Data in the following situations:</p>
         <ul>
-            <li><strong>With Service Providers:</strong> We may share Your Personal Data with Service Providers to monitor and analyze the use of our Service, to contact You.</li>
+            <li><strong>With Service Providers:</strong> We may share Your Personal Data with Service Providers (such as Firebase/Google) to monitor and analyze the use of our Service, store data, and deliver push notifications to You.</li>
             <li><strong>For business transfers:</strong> We may share or transfer Your Personal Data in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.</li>
             <li><strong>With Affiliates:</strong> We may share Your Personal Data with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.</li>
             <li><strong>With business partners:</strong> We may share Your Personal Data with Our business partners to offer You certain products, services or promotions.</li>
-            <li><strong>With other users:</strong> If Our Service offers public areas, when You share Personal Data or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.</li>
             <li><strong>With Your consent:</strong> We may disclose Your Personal Data for any other purpose with Your consent.</li>
         </ul>
         
@@ -255,11 +296,17 @@
             <li><strong>Account Information</strong>
                 <ul>
                     <li>User Accounts: retained for the duration of your account relationship plus up to 24 months after account closure to handle any post-termination issues or resolve disputes.</li>
+                    <li>Device Tokens (FCM): retained for the duration of your active account or until you revoke notification permissions.</li>
+                </ul>
+            </li>
+            <li><strong>Machinery and Sensor Data</strong>
+                <ul>
+                    <li>Operational data, sensor readings, and machinery status: up to 24 months from data collection to enable historical analysis and service improvements.</li>
                 </ul>
             </li>
             <li><strong>Customer Support Data</strong>
                 <ul>
-                    <li>Support tickets and correspondence: up to 24 months from the date of ticket closure to resolve follow-up inquiries, track service quality, and defend against potential legal claims</li>
+                    <li>Support tickets and correspondence: up to 24 months from the date of ticket closure to resolve follow-up inquiries, track service quality, and defend against potential legal claims.</li>
                     <li>Chat transcripts: up to 24 months for quality assurance and staff training purposes.</li>
                 </ul>
             </li>
@@ -296,13 +343,31 @@
         <p>Where required by applicable law, We will ensure that international transfers of Your Personal Data are subject to appropriate safeguards and supplementary measures where appropriate. The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.</p>
         
         <h3>Delete Your Personal Data</h3>
-        <p>You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.</p>
         
-        <p>Our Service may give You the ability to delete certain information about You from within the Service.</p>
+        <div class="highlight-box">
+            <h4>How to Delete Your Data</h4>
+            <p>You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.</p>
+            <p><strong>To request deletion of your personal data and account:</strong></p>
+            <ul>
+                <li>Send an email to <strong>info@patkol.com</strong> with the subject line "Data Deletion Request"</li>
+                <li>Include your registered email address and any other identifying information</li>
+                <li>We will process your request within <strong>30 days</strong></li>
+            </ul>
+            <p>Upon receiving your deletion request, we will:</p>
+            <ul>
+                <li>Delete your account and associated Personal Data from our active systems</li>
+                <li>Remove your device tokens from Firebase Cloud Messaging</li>
+                <li>Delete your machinery data and sensor information</li>
+                <li>Notify you once the deletion is complete</li>
+            </ul>
+        </div>
         
-        <p>You may update, amend, or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, or delete any Personal Data that You have provided to Us.</p>
-        
-        <p>Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so.</p>
+        <p>Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so. This may include:</p>
+        <ul>
+            <li>Data required for legal compliance or regulatory purposes</li>
+            <li>Data necessary for resolving disputes or enforcing agreements</li>
+            <li>Residual data in backup systems scheduled for routine deletion (typically within 90 days)</li>
+        </ul>
         
         <h3>Disclosure of Your Personal Data</h3>
         
@@ -325,6 +390,27 @@
         <h3>Security of Your Personal Data</h3>
         <p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially reasonable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
         
+        <p>We implement appropriate technical and organizational measures to protect your Personal Data, including:</p>
+        <ul>
+            <li>Encryption of data in transit and at rest</li>
+            <li>Secure authentication via Firebase Authentication</li>
+            <li>Regular security assessments and updates</li>
+            <li>Access controls and monitoring</li>
+        </ul>
+        
+        <h2>Your Rights Under PDPA (Thailand Personal Data Protection Act)</h2>
+        <p>If you are a resident of Thailand, you have the following rights regarding your Personal Data:</p>
+        <ul>
+            <li><strong>Right to Access:</strong> You have the right to request access to your Personal Data that we hold.</li>
+            <li><strong>Right to Rectification:</strong> You have the right to request correction of inaccurate or incomplete Personal Data.</li>
+            <li><strong>Right to Erasure:</strong> You have the right to request deletion of your Personal Data under certain circumstances.</li>
+            <li><strong>Right to Restriction:</strong> You have the right to request restriction of processing of your Personal Data.</li>
+            <li><strong>Right to Data Portability:</strong> You have the right to receive your Personal Data in a structured, commonly used, and machine-readable format.</li>
+            <li><strong>Right to Object:</strong> You have the right to object to processing of your Personal Data for certain purposes.</li>
+            <li><strong>Right to Withdraw Consent:</strong> Where we rely on your consent to process your Personal Data, you have the right to withdraw that consent at any time.</li>
+        </ul>
+        <p>To exercise any of these rights, please contact us at info@patkol.com.</p>
+        
         <h2>Children's Privacy</h2>
         <p>Our Service does not address anyone under the age of 16. We do not knowingly collect personally identifiable information from anyone under the age of 16. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 16 without verification of parental consent, We take steps to remove that information from Our servers.</p>
         
@@ -338,7 +424,7 @@
         <h2>Changes to this Privacy Policy</h2>
         <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
         
-        <p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.</p>
+        <p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Effective Date" at the top of this Privacy Policy.</p>
         
         <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
         
